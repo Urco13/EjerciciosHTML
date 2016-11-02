@@ -1,192 +1,195 @@
 <html>
-<head>
-</head>
-<body>
-	<h2>Ejemplo formulario</h2>
-	<h1 align="center">ENCUESTA INFORMATICA</h1>
-	<form>
-		<fieldset>
-			<legend>Datos personales</legend>
-			Edad:<input size="2" maxlength="3" name="edad"></input>&nbsp
-			Sexo:<input type="radio" name="Sexo" value="H"></input>Hombre
-			<input type="radio" name="Sexo" value="M"></input>Mujer&nbsp
-			Est&aacutes estudiando:&nbsp
-			<input name="asignaturas" list="materias"></input>
-			<datalist id="materias">
-				<option value="Primaria">
-				<option value="Secundaria">
-				<option value="Bachillerato">
-				<option value="Ciclo grado medio">
-				<option value="Ciclo grado superior">
-				<option value="Diplomatura">
-				<option value="Licenciatura">
-				<option value="Doctorado">
-			</datalist>
-		</fieldset>
-		</form>
+	<head>
+		<title>Formularios 2</title>
+		<meta charset="UTF-8"/>
+		<!--CarlosRaFerGar-->
+	</head>
+	<body>
+		<h2>Ejemplo formulario</h2>
+		<h1 align="center">ENCUESTA INFORMATICA</h1>
 		<form>
 			<fieldset>
-				<legend>Preguntas generales</legend>
-				&iquestTienes ordenador en tu casa?
-				<input type="radio" name="ordenador" value="S"></input>Si
-				<input type="radio" name="ordenador" value="N"></input>No
-				<br><br>
-				&iquestLo utilizas solo tu o lo compartes con otras personas?
-				<input type="radio" name="compartir" value="Propio"></input>Propio
-				<input type="radio" name="compartir" value="Compartido"></input>Compartido
-				<br><br>
-				En per&iacuteodos de clase:<br>
-					<ul>
-						<li>&iquestCu&aacutentos d&iacuteas a la semana sueles enceder el ordenador? <input name="claseD" size="1" list="ndias"></input></li><br>
-						<datalist id="ndias">
-							<option value="0">
-							<option value="1"/>
-							<option value="2"/>
-							<option value="3"/>
-							<option value="4"/>
-							<option value="5"/>
-							<option value="6"/>
-							<option value="7"/>
-						</datalist>
-						<li>&iquestCu&aacutentas horas diarias sueles gastar el ordenador(cada d&iacutea)? <input name="claseH" list="nhoras"></input></li>
-						<datalist id="nhoras">
-							<option value="menos de 1 hora"/>
-							<option value="entre 1 y 2 horas"/>
-							<option value="entre 2 y 3 horas"/>
-							<option value="m&#225s de 3 horas"/>
-					</ul>
-				En periodo de vacaciones:<br>
-					<ul>
-						<li>&iquestCu&aacutentos d&iacuteas a la semana sueles enceder el ordenador? <input name="claseD" size="1" list="ndias"></input></li><br>
+				<legend>Datos personales</legend>
+				Edad:<input size="2" maxlength="3" name="edad"></input>&nbsp;
+				Sexo:<input type="radio" name="Sexo" value="H"></input>Hombre
+				<input type="radio" name="Sexo" value="M"></input>Mujer&nbsp;
+				Est&aacutes; estudiando:&nbsp;
+				<input name="asignaturas" list="materias"></input>
+				<datalist id="materias">
+					<option value="Primaria">
+					<option value="Secundaria">
+					<option value="Bachillerato">
+					<option value="Ciclo grado medio">
+					<option value="Ciclo grado superior">
+					<option value="Diplomatura">
+					<option value="Licenciatura">
+					<option value="Doctorado">
+				</datalist>
+			</fieldset>
+			</form>
+			<form>
+				<fieldset>
+					<legend>Preguntas generales</legend>
+					&iquest;Tienes ordenador en tu casa?
+					<input type="radio" name="ordenador" value="S"></input>Si
+					<input type="radio" name="ordenador" value="N"></input>No
+					<br><br>
+					&iquest;Lo utilizas solo tu o lo compartes con otras personas?
+					<input type="radio" name="compartir" value="Propio"></input>Propio
+					<input type="radio" name="compartir" value="Compartido"></input>Compartido
+					<br><br>
+					En per&iacute;odos de clase:<br>
+						<ul>
+							<li>&iquest;Cu&aacute;ntos d&iacute;as a la semana sueles enceder el ordenador? <input name="claseD" size="1" list="ndias"></input></li><br>
+							<datalist id="ndias">
+								<option value="0">
+								<option value="1"/>
+								<option value="2"/>
+								<option value="3"/>
+								<option value="4"/>
+								<option value="5"/>
+								<option value="6"/>
+								<option value="7"/>
+							</datalist>
+							<li>&iquest;Cu&aacute;ntas horas diarias sueles gastar el ordenador(cada d&iacute;a)? <input name="claseH" list="nhoras"></input></li>
+							<datalist id="nhoras">
+								<option value="menos de 1 hora"/>
+								<option value="entre 1 y 2 horas"/>
+								<option value="entre 2 y 3 horas"/>
+								<option value="m&#225s de 3 horas"/>
+						</ul>
+						En periodo de vacaciones:<br>
+						<ul>
+							<li>&iquest;Cu&aacute;ntos d&iacute;as a la semana sueles enceder el ordenador? <input name="claseD" size="1" list="ndias"></input></li><br>
 						
-						<li>&iquestCu&aacutentas horas diarias sueles gastar el ordenador(cada d&iacutea)? <input name="claseH" list="nhoras"></input></li>
-					</ul><br>
-					&iquestA qu&eacute  dedicas tu tiempo en el ordenador?<br><br>
-					<input type="checkbox" name="escribir" value="escribir"/>Escribir
-					<input type="checkbox" name="dibujar" value="dibujar"/>Dibujar
-					<input type="checkbox" name="Programar" value="Programar"/>Programar
-					<input type="checkbox" name="Hacer música" value="Hacer música"/>Hacer m&uacutesica
-					<input type="checkbox" name="Retoque fotográfico" value="Retoque fotográfico"/>Retoque fotogr&aacutefico<br>
-					<input type="checkbox" name="Jugar" value="Jugar"/>Jugar
-					<input type="checkbox" name="Ver páginas web" value="Ver páginas web"/>Ver p&aacuteginas web
-					<input type="checkbox" name="Chatear" value="Chatear"/>Chatear
-					<input type="checkbox" name="Intercambiar música" value="Intercambiar música"/>Intercambiar m&uacutesica
-					<input type="checkbox" name="Intercambiar películas/series" value="Intercambiar películas/series"/>Intercambiar pel&iacuteculas/series<br><br>
-					Otras actividades (especifica):<input type="text name="vacio"/>&nbsp<input type="text name="vacio"/>&nbsp<input type="text name="vacio"/>
-			</fieldset>
-		</form>
-		<form>
-			<fieldset>
-				<legend>Descripci&oacuten</legend>
-				Tipo:<input type="radio" name="ordenador" value="sobremesa"/>Sobremesa-
-					<input type="radio" name="ordenador" value="portatil"/>Port&aacutetil-
-					<input type="radio" name="ordenador" value="tabletPC"/>Tablet PC<br><br>
-					Antig&uumledad:<input name="antiguedad" list="antiguedad"/><br><br>
-					<datalist id="antiguedad">
-						<option value="menos de 1 a&#241o"/>
-						<option value="entre 1 y 2 a&#241os"/>
-						<option value="entre 2 y 4 a&#241os"/>
-						<option value="m&#225s de 4 a&#241os"/>
-					</datalist>
-					<input type="radio" name="marca" value="Smarca"/>Sin marca
-					<input type="radio" name="marca" value="Dmarca"/>De marca(especificar):
-					<input type="text" name="Specificacion"/><br><br>
-					Procesador: Marca <input name="procesador" list="Smarca"/>
-					<datalist id="Smarca">
-						<option value="Intel"/>
-						<option value="AMD"/>
-						<option value="otros"/>
-					</datalist>
-					- Modelo:
-					<select>
-						<optgroup label="Intel">
-							<option select></option>
-							<option value="Pentium III o anterior">Pentium III o anterior</option>
-							<option value="Pentium IV">Pentium IV</option>
-							<option value="Pentium Core2">Pentium Core2</option>
-							<option value="Celeron">Celeron</option>
-							<option value="Otro">Otro</option>
-						</optgroup>
-						<optgroup label="AMD">
-							<option value="Athlon XP o anterior">Athlon XP o anterior</option>
-							<option value="Athlon 64">Athlon 64</option>
-							<option value="Athlon 64 X2">Athlon 64 X2</option>
-							<option value="Sempron">Sempron</option>
-							<option value="Duron">Duron</option>
-							<option value="Otro">Otro</option>
-						</optgroup>
-					</select>
-					- Velocidad: <input name="velocidad" list="velocidad"/><br><br>
-					<datalist id="velocidad">
-						<option value="menos de 1,5GHz"/>
-						<option value="1,5GHz o m&#225s"/>
-						<option value="2,5GHz o m&#225s"/>
-					</datalist>
-					 Memoria RAM: <input name="memoriaRam" list="memoriaRam"/><br><br>
-					<datalist id="memoriaRam">
-						<option value="menos de 1 GB"/>
-						<option value="1 GB o m&#225s"/>
-						<option value="2 GB o m&#225s"/>
-						<option value="4 GB o m&#225s"/>
-					</datalist>
-					Disco duro: <input name="discoDuro" list="discoDuro"/><br><br>
-					<datalist id="discoDuro">
-						<option value="menos de 250 GB"/>
-						<option value="250 GB o más"/>
-						<option value="500 GB o más"/>		
-					</datalist>
-					CD/DVD:
-					<input type="checkbox" name="cd-rom" value="cd-rom"/>CD-ROM -
-					<input type="checkbox" name="cd-rw" value="cd-rw"/>CD-RW -
-					<input type="checkbox" name="dvd-rom" value="dvd-rom"/>DVD-ROM -
-					<input type="checkbox" name="dvd-rw" value="dvd-rw"/>DVD-RW y/o +RW
-					<br><br>
-					Monitor: Tipo
-					<input type="radio" name="monitor" value="crt"></input>CRT -
-					<input type="radio" name="monitor" value="tft"></input>TFT -
-					Tama&ntildeo:
-					<input type="radio" name="tamaño" value="-17"></input>Menos de 17"
-					<input type="radio" name="tamaño" value="17"></input>17"
-					<input type="radio" name="tamaño" value="19"></input>19"
-					<input type="radio" name="tamaño" value="+19"></input>m&aacutes de 19"
-					<br><br>
-					Acceso a Internet:<input name="moden" list="moden"/>
-					<datalist id="moden">
-						<option value="Móden"/>
-						<option value="ADSL"/>
-						<option value="Cable"/>
-						<option value="Otros"/>
-					</datalist>
-			</fieldset>
-		</form><br><br>
+							<li>&iquest;Cu&aacute;ntas horas diarias sueles gastar el ordenador(cada d&iacute;a)? <input name="claseH" list="nhoras"></input></li>
+						</ul><br>
+						&iquest;A qu&eacute;  dedicas tu tiempo en el ordenador?<br><br>
+						<input type="checkbox" name="escribir" value="escribir"/>Escribir
+						<input type="checkbox" name="dibujar" value="dibujar"/>Dibujar
+						<input type="checkbox" name="Programar" value="Programar"/>Programar
+						<input type="checkbox" name="Hacer música" value="Hacer música"/>Hacer m&uacute;sica
+						<input type="checkbox" name="Retoque fotográfico" value="Retoque fotográfico"/>Retoque fotogr&aacute;fico<br>
+						<input type="checkbox" name="Jugar" value="Jugar"/>Jugar
+						<input type="checkbox" name="Ver páginas web" value="Ver páginas web"/>Ver p&aacute;ginas web
+						<input type="checkbox" name="Chatear" value="Chatear"/>Chatear
+						<input type="checkbox" name="Intercambiar música" value="Intercambiar música"/>Intercambiar m&uacute;sica
+						<input type="checkbox" name="Intercambiar películas/series" value="Intercambiar películas/series"/>Intercambiar pel&iacute;culas/series<br><br>
+						Otras actividades (especifica):<input type="text" name="vacio"/>&nbsp;<input type="text" name="vacio"/>&nbsp;<input type="text name="vacio"/>
+				</fieldset>
+			</form>
+			<form>
+				<fieldset>
+					<legend>Descripci&oacute;n</legend>
+					Tipo:<input type="radio" name="ordenador" value="sobremesa"/>Sobremesa-
+						<input type="radio" name="ordenador" value="portatil"/>Port&aacute;til-
+						<input type="radio" name="ordenador" value="tabletPC"/>Tablet PC<br><br>
+						Antig&uuml;edad:<input name="antiguedad" list="antiguedad"/><br><br>
+						<datalist id="antiguedad">
+							<option value="menos de 1 a&#241o"/>
+							<option value="entre 1 y 2 a&#241os"/>
+							<option value="entre 2 y 4 a&#241os"/>
+							<option value="m&#225s de 4 a&#241os"/>
+						</datalist>
+						<input type="radio" name="marca" value="Smarca"/>Sin marca
+						<input type="radio" name="marca" value="Dmarca"/>De marca(especificar):
+						<input type="text" name="Specificacion"/><br><br>
+						Procesador: Marca <input name="procesador" list="Smarca"/>
+						<datalist id="Smarca">
+							<option value="Intel"/>
+							<option value="AMD"/>
+							<option value="otros"/>
+						</datalist>
+						- Modelo:
+						<select name="caracteristicas">
+							<optgroup label="Intel">
+								<option select></option>
+								<option value="Pentium III o anterior">Pentium III o anterior</option>
+								<option value="Pentium IV">Pentium IV</option>
+								<option value="Pentium Core2">Pentium Core2</option>
+								<option value="Celeron">Celeron</option>
+								<option value="Otro">Otro</option>
+							</optgroup>
+							<optgroup label="AMD">
+								<option value="Athlon XP o anterior">Athlon XP o anterior</option>
+								<option value="Athlon 64">Athlon 64</option>
+								<option value="Athlon 64 X2">Athlon 64 X2</option>
+								<option value="Sempron">Sempron</option>
+								<option value="Duron">Duron</option>
+								<option value="Otro">Otro</option>
+							</optgroup>
+						</select>
+						- Velocidad: <input name="velocidad" list="velocidad"/><br><br>
+						<datalist id="velocidad">
+							<option value="menos de 1,5GHz"/>
+							<option value="1,5GHz o m&#225s"/>
+							<option value="2,5GHz o m&#225s"/>
+						</datalist>
+						Memoria RAM: <input name="memoriaRam" list="memoriaRam"/><br><br>
+						<datalist id="memoriaRam">
+							<option value="menos de 1 GB"/>
+							<option value="1 GB o m&#225s"/>
+							<option value="2 GB o m&#225s"/>
+							<option value="4 GB o m&#225s"/>
+						</datalist>
+						Disco duro: <input name="discoDuro" list="discoDuro"/><br><br>
+						<datalist id="discoDuro">
+							<option value="menos de 250 GB"/>
+							<option value="250 GB o más"/>
+							<option value="500 GB o más"/>		
+						</datalist>
+						CD/DVD:
+						<input type="checkbox" name="cd-rom" value="cd-rom"/>CD-ROM -
+						<input type="checkbox" name="cd-rw" value="cd-rw"/>CD-RW -
+						<input type="checkbox" name="dvd-rom" value="dvd-rom"/>DVD-ROM -
+						<input type="checkbox" name="dvd-rw" value="dvd-rw"/>DVD-RW y/o +RW
+						<br><br>
+						Monitor: Tipo
+						<input type="radio" name="monitor" value="crt"></input>CRT -
+						<input type="radio" name="monitor" value="tft"></input>TFT -
+						Tama&ntildeo:
+						<input type="radio" name="tamaño" value="-17"></input>Menos de 17"
+						<input type="radio" name="tamaño" value="17"></input>17"
+						<input type="radio" name="tamaño" value="19"></input>19"
+						<input type="radio" name="tamaño" value="+19"></input>m&aacute;s de 19"
+						<br><br>
+						Acceso a Internet:<input name="moden" list="moden"/>
+						<datalist id="moden">
+							<option value="Móden"/>
+							<option value="ADSL"/>
+							<option value="Cable"/>
+							<option value="Otros"/>
+						</datalist>
+				</fieldset>
+			</form><br><br>
 		
-		Otro formulario:<br><br>
-		<h3>Formulario de alta</h3>
-		<form action="form_action.asp">
-			<b>Nombre y*</b> <input type="text" name="nombre" pattern="[A-Z][a-z]+" placeholder="Nombre" required autofocus></input><br><br>
-			<b>Primer apellido *</b> <input type="text" name="primerApellido" pattern="[A-Z][a-z]+" placeholder="Primer apellido" required></input><br><br>
-			<b>Segundo apellido *</b><input type="text" name="segundoApellido" pattern="[A-Z][a-z]+" placeholder="Segundo apellido" required></input><br><br>
-			<b>Direcci&oacuten *</b> <input type="text" name="direccion" placeholder="Calle,n&#250mero,piso,puerta" size="40" required></input><br><br>
-			C&oacutedigo postal <input type="text" name="codigoPos" pattern="[0-9]{5}" size="13" placeholder="C&#243odigo postal" required ></input>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			Municipio <input type="text" name="municipio" size="9" placeholder="Municipio"><br><br>
-			Provincia <input name="provincia" list="provincia" size="10" placeholder="Provincia"></input>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			<datalist id="provincia">
-				<option value="A Coru&#241a"/>
-				<option value="Lugo"/>
-				<option value="Orense"/>
-				<option value="Pontevedra"/>
-			</datalist>
-			Pais <input name="pais" list="pais" size="10"><br><br>
-			<datalist id="pais">
-				<option value="Espa&#241a"/>
-				<option value="Portugal"/>
-				<option value="Francia"/>
-				<option value="Inglaterra"/>
-			</datalist>
-			Email <input type="email" name="email" value="@" required></input><br><br>
-			Tel&eacutefono *<input name="telefono" pattern="[0-9]{9}" required size="9"></input>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			M&oacutevil <input name="movil"></input><br><br>
-			<button >Darme de alta alta<img alt="flecha" src="flecha.png" width="25" height="25" align="center"></button>
-		</form>
-</body>
+			Otro formulario:<br><br>
+			<h3>Formulario de alta</h3>
+			<form action="form_action.asp">
+				<b>Nombre y*</b> <input type="text" name="nombre" pattern="[A-Z][a-z]+" placeholder="Nombre" required autofocus></input><br><br>
+				<b>Primer apellido *</b> <input type="text" name="primerApellido" pattern="[A-Z][a-z]+" placeholder="Primer apellido" required></input><br><br>
+				<b>Segundo apellido *</b><input type="text" name="segundoApellido" pattern="[A-Z][a-z]+" placeholder="Segundo apellido" required></input><br><br>
+				<b>Direcci&oacute;n *</b> <input type="text" name="direccion" placeholder="Calle,n&#250mero,piso,puerta" size="40" required></input><br><br>
+				C&oacute;digo postal <input type="text" name="codigoPos" pattern="[0-9]{5}" size="13" placeholder="C&#243odigo postal" required ></input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				Municipio <input type="text" name="municipio" size="9" placeholder="Municipio"><br><br>
+				Provincia <input name="provincia" list="provincia" size="10" placeholder="Provincia"></input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<datalist id="provincia">
+					<option value="A Coru&#241a"/>
+					<option value="Lugo"/>
+					<option value="Orense"/>
+					<option value="Pontevedra"/>
+				</datalist>
+				Pais <input name="pais" list="pais" size="10"><br><br>
+				<datalist id="pais">
+					<option value="Espa&#241a"/>
+					<option value="Portugal"/>
+					<option value="Francia"/>
+					<option value="Inglaterra"/>
+				</datalist>
+				Email <input type="email" name="email" value="@" required></input><br><br>
+				Tel&eacute;fono *<input name="telefono" pattern="[0-9]{9}" required size="9"></input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				M&oacute;vil <input name="movil"></input><br><br>
+				<button >Darme de alta alta<img alt="flecha" src="flecha.png" width="25" height="25" align="center"></button>
+			</form>
+	</body>
 </html>
