@@ -1,40 +1,74 @@
 <!DOCTYPE html>
-<head>
-	<meta charset="UTF-8"
-<title>Ejemplo de formulario GET​</title>
-</head>
-<body>
-	<form action="http://www.prueba.com/prueba.php" id="form1">
-	<datalist id="provincias">
-		<option value="A Coruña"></option>
-		<option value="Lugo"></option>
-		<option value="Orense"></option>
-		<option value="Pontevedra"></option>
-	</datalist>
-	ponemos el foco en email.
+<html>
+	<!--ponemos el foco en email.
 	añadimos un boton BONITO de enviar. una imagen
 	cambiamos el submit que cambien el metodo a post, que no autovalide,
 	valor por defecto de email @gmail.com
 	sugerir un ejemplo para edad poniendo 99.
-	añado un campo Nombre obligatorio
-	Color Preferido:<input type="color" name="micolor" id="micolor"/><br><br>
-	Fecha de nacimiento<input type="date" name="fecha"/><br><br>
-	Email:<input type="email" name="email" required multiple autofocus/><br><br>
+	añado un campo Nombre obligatorio-->
+	<head>
+		<title>Ejemplo de formulario GET​</title>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<form method="post" action="demo-form.html" id="form1">
+			<fieldset>
+				<legend>Formulario HTML5</legend>
+				<datalist id="provincias">
+					<option value="A Coruña"></option>
+					<option value="Lugo"></option>
+					<option value="Orense"></option>
+					<option value="Pontevedra"></option>
+				</datalist>
 	
-	Provincia de nacimiento: (datalist)<br><br>
-	<input name="provincias" list="provincias"></input><br><br>
-	Provincia de residencia:<br><br>
-	<input name="provinciasR" list="provincias"></input><br><br>
-	URL:<input type="url" name="miurl" id="miurl"></input><br><br>
-	En que mes empeze este curso:<br><br>
-	<input type="month" name="mes" id="mes"></input><br><br>
-	edad:<br><br>
-	<input type="number" name="minumero" id="minumero" min="18" max="50" step="1" value="18" placeholder="99"></input>(entre 18 y 50) number<br><br>
-	valoracion del curso: 0,5,10 range<br><br>
-	<input type="range" name="rango" min="0" max="10" step="5" ></input><br><br>
-	datos a buscar: search<br><br>
-	Nombre*<br><br>
-	
-	</form>&nbsp;
-</body>
+				Color Preferido:&nbsp;
+				<input type="color" name="micolor" id="micolor"/>
+				<br><br>
+				Fecha de nacimiento:&nbsp;
+				<input type="date" name="fecha"/>
+				<br><br>
+				Email:&nbsp;
+				<input type="email" name="email" required multiple autofocus/>
+				<br><br>
+				Provincia de nacimiento:
+				<br><br>
+				<input name="provincias" list="provincias"></input>
+				<br><br>
+				Provincia de residencia:
+				<br><br>
+				<input name="provinciasR" list="provincias"></input>
+				<br><br>
+				URL de las entregas:
+				<br><br>
+				<input type="url" name="miurl" id="miurl"></input>
+				<br><br>
+				En que mes empeze este curso:
+				<br><br>
+				<input type="month" name="mes" id="mes"></input><br><br>
+				edad:
+				<br><br>
+				<input type="number" name="minumero" id="minumero" min="18" max="50" step="1" value="18" placeholder="99"></input>(entre 18 y 50) number<br><br>
+				valoracion del curso: 0,5,10 range
+				<br><br>
+				<input type="range" name="rango" min="0" max="10" step="5" ></input>
+				<br><br>
+				datos a buscar:
+				<br><br>
+				<input type="search" name="busquedad"></input>
+				<br><br>
+				Nombre*
+				<br><br>
+				<input type="text" name="Nombre1" required></input>
+				<br><br>
+				<input type="submit" value="Enviar metodo get y no validar" formmethod="get" formnovalidate></input>
+				<br><br>
+				<input type="submit" value="Enviar y abrir en una ventana nueva" formtarget="_blank"></input>
+				<br><br>
+				<input type="image" value="ENVIAR" src="enviar.png" alt="spacio" width="50" height="50"></input>
+			</fieldset>
+		</form>
+		FIN DEL FORMULARIO
+		<br><br>
+		<input type="checkbox" name="informacion" checked form="form1"></input>Enviar informacion(Esta opcion se enviara tambien con el formulario)
+	</body>
 </html>
