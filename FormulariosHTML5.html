@@ -4,7 +4,7 @@
 <title>Ejemplo de formulario GET​</title>
 </head>
 <body>
-	<form action="http://www.prueba.com/prueba.php">
+	<form action="http://www.prueba.com/prueba.php" id="form1">
 	<datalist id="provincias">
 		<option value="A Coruña"></option>
 		<option value="Lugo"></option>
@@ -20,13 +20,21 @@
 	Color Preferido:<input type="color" name="micolor" id="micolor"/><br><br>
 	Fecha de nacimiento<input type="date" name="fecha"/><br><br>
 	Email:<input type="email" name="email" required multiple autofocus/><br><br>
-	Provincia de nacimiento: (datalist)
-	Provincia de residencia:
+	
+	Provincia de nacimiento: (datalist)<br><br>
+	<input name="provincias" list="provincias"></input><br><br>
+	Provincia de residencia:<br><br>
+	<input name="provinciasR" list="provincias"></input><br><br>
 	URL:<input type="url" name="miurl" id="miurl"></input><br><br>
-	En que mes empeze este curso:<input type="month" name="mes" id="mes"></input><br><br>
-	edad: (entre 18 y 50) number
-	valoracion del curso: 0,5,10 range
-	datos a buscar: search
-	</form>
+	En que mes empeze este curso:<br><br>
+	<input type="month" name="mes" id="mes"></input><br><br>
+	edad:<br><br>
+	<input type="number" name="minumero" id="minumero" min="18" max="50" step="1" value="18" placeholder="99"></input>(entre 18 y 50) number<br><br>
+	valoracion del curso: 0,5,10 range<br><br>
+	<input type="range" name="rango" min="0" max="10" step="5" ></input><br><br>
+	datos a buscar: search<br><br>
+	Nombre*<br><br>
+	
+	</form>&nbsp;
 </body>
 </html>
